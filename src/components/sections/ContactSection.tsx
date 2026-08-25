@@ -22,17 +22,21 @@ export function ContactSection() {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      const response = await fetch("/api/contact", {
+      // На сервере заявка сохраняется через API; на статическом хостинге
+      // просто открываем WhatsApp с заполненным сообщением.
+      await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
-      });
-      if (response.ok) {
-        setIsSubmitted(true);
-        setFormData({ name: "", email: "", phone: "", message: "" });
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
+      }).catch(() => null);
+      const text = encodeURIComponent(
+        `Заявка с сайта\nИмя: ${formData.name}\nТелефон: ${formData.phone}` +
+          (formData.email ? `\nE-mail: ${formData.email}` : "") +
+          (formData.message ? `\nСообщение: ${formData.message}` : ""),
+      );
+      window.open(`${COMPANY.whatsappHref}?text=${text}`, "_blank");
+      setIsSubmitted(true);
+      setFormData({ name: "", email: "", phone: "", message: "" });
     } finally {
       setIsSubmitting(false);
     }
