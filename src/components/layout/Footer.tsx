@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { COMPANY } from "@/lib/company";
 import { SERVICES } from "@/lib/catalog";
-import logo from "../../../public/logo.png";
+import logoWhite from "../../../public/logo-white.png";
 
 export function Footer() {
   return (
@@ -13,11 +13,11 @@ export function Footer() {
             <div>
               <div className="flex items-center gap-3">
                 <Image
-                  src={logo}
+                  src={logoWhite}
                   alt={COMPANY.name}
                   width={94}
-                  height={89}
-                  className="h-14 w-auto rounded-lg bg-white px-1.5 py-1.5"
+                  height={65}
+                  className="h-12 w-auto"
                 />
                 <span className="text-[17px] font-extrabold tracking-wide text-white">
                   {COMPANY.shortName}
@@ -28,7 +28,6 @@ export function Footer() {
                 техосвидетельствование. Собственный металлоцех, г.{" "}
                 {COMPANY.city}.
               </p>
-              <span className="italia-stripe mt-4 inline-block h-2.5 w-11 rounded-sm" />
             </div>
 
             <div>

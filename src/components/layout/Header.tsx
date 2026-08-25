@@ -84,7 +84,6 @@ export function Header() {
                 side="right"
                 className="!w-full border-l border-brand-line bg-brand-paper p-0 sm:!w-80"
               >
-                <div className="italia-stripe h-1.5 w-full" />
                 <div className="flex h-full flex-col p-6">
                   <div className="mb-8 mt-6 flex items-center gap-3">
                     <Image

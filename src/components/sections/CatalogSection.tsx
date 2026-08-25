@@ -89,7 +89,6 @@ export function CatalogSection() {
             href="/products"
             className="group relative flex items-center justify-between gap-6 overflow-hidden rounded-3xl bg-brand-green px-8 py-7 transition-transform hover:scale-[1.01] md:px-10"
           >
-            <span className="italia-stripe absolute inset-x-0 top-0 h-1.5" />
             <div>
               <div className="text-[12px] font-semibold uppercase tracking-[0.18em] text-white">
                 Собственный металлоцех

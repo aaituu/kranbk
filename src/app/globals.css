@@ -41,51 +41,47 @@
   --radius-4xl: calc(var(--radius) + 16px);
 
   /* Фирменная палитра SA Consulting */
-  --color-brand-cream: #f6f5f0;
+  --color-brand-cream: #f3f5f9;
   --color-brand-paper: #ffffff;
-  --color-brand-line: #e3e5df;
-  --color-brand-forest: #0c4023;
-  --color-brand-green: #0b9245;
-  --color-brand-mint: #e4f3ea;
-  --color-brand-lime: #59c98b;
+  --color-brand-line: #dde3ed;
+  --color-brand-forest: #1d2d49;
+  --color-brand-green: #3b5279;
+  --color-brand-mint: #e8edf6;
+  --color-brand-lime: #8fa9cf;
   --color-brand-red: #e03231;
   --color-brand-redsoft: #fbe9e7;
-  --color-brand-muted: #44544a;
+  --color-brand-muted: #47536b;
 
-  /* Цвета флага Италии */
-  --color-italia-green: #0b9245;
-  --color-italia-white: #ffffff;
-  --color-italia-red: #e03231;
 }
 
 :root {
   --radius: 0.75rem;
-  --background: #f6f5f0;
-  --foreground: #0c4023;
+  --background: #f3f5f9;
+  --foreground: #1d2d49;
   --card: #ffffff;
-  --card-foreground: #0c4023;
+  --card-foreground: #1d2d49;
   --popover: #ffffff;
-  --popover-foreground: #0c4023;
-  --primary: #0c4023;
+  --popover-foreground: #1d2d49;
+  --primary: #1d2d49;
   --primary-foreground: #ffffff;
-  --secondary: #e4f3ea;
-  --secondary-foreground: #0c4023;
-  --muted: #edeeea;
-  --muted-foreground: #44544a;
-  --accent: #e4f3ea;
-  --accent-foreground: #0b9245;
+  --secondary: #e8edf6;
+  --secondary-foreground: #1d2d49;
+  --muted: #eaedf3;
+  --muted-foreground: #47536b;
+  --accent: #e8edf6;
+  --accent-foreground: #3b5279;
   --destructive: #e03231;
-  --border: #e3e5df;
-  --input: #e3e5df;
-  --ring: #0b9245;
+  --border: #dde3ed;
+  --input: #dde3ed;
+  --ring: #3b5279;
   --sidebar: #ffffff;
-  --sidebar-foreground: #0c4023;
-  --sidebar-primary: #0c4023;
+  --sidebar-foreground: #1d2d49;
+  --sidebar-primary: #1d2d49;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #e4f3ea;
-  --sidebar-accent-foreground: #0b9245;
-  --sidebar-border: #e3e5df;
-  --sidebar-ring: #0b9245;
+  --sidebar-accent: #e8edf6;
+  --sidebar-accent-foreground: #3b5279;
+  --sidebar-border: #dde3ed;
+  --sidebar-ring: #3b5279;
 }
 
 @layer base {
@@ -112,33 +108,20 @@
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #eceee9;
+  background: #e6eaf1;
 }
 ::-webkit-scrollbar-thumb {
-  background: #0c4023;
+  background: #1d2d49;
   border-radius: 999px;
-  border: 3px solid #eceee9;
+  border: 3px solid #e6eaf1;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #0b9245;
+  background: #3b5279;
 }
 
 ::selection {
-  background: #0b9245;
+  background: #3b5279;
   color: #ffffff;
-}
-
-/* Италия: триколор-полоса */
-.italia-stripe {
-  background: linear-gradient(
-    90deg,
-    #0b9245 0%,
-    #0b9245 33.33%,
-    #ffffff 33.33%,
-    #ffffff 66.66%,
-    #e03231 66.66%,
-    #e03231 100%
-  );
 }
 
 /* Подпись над заголовком секции */
@@ -149,7 +132,7 @@
   font-size: 12px;
   letter-spacing: 0.22em;
   font-weight: 600;
-  color: #0b9245;
+  color: #3b5279;
   text-transform: uppercase;
 }
 .eyebrow::before {

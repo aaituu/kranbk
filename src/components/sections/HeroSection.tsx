@@ -19,11 +19,9 @@ export function HeroSection() {
     <section className="px-3 pt-3 md:px-4 md:pt-4">
       <div className="mx-auto max-w-[1280px]">
         <div className="overflow-hidden rounded-3xl">
-          <div className="italia-stripe h-1.5 w-full" />
           <div className="grid lg:grid-cols-[1.05fr_0.95fr]">
             <div className="flex flex-col justify-center gap-6 bg-brand-green px-7 py-12 md:px-13 md:py-16">
               <div className="flex items-center gap-3">
-                <span className="italia-stripe inline-block h-4 w-9 rounded-sm" />
                 <span className="text-[13px] font-medium uppercase tracking-[0.18em] text-brand-mint">
                   {COMPANY.name} · г. {COMPANY.city}
                 </span>

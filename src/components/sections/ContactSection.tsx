@@ -150,7 +150,6 @@ export function ContactSection() {
 
           <div className="flex flex-col gap-4">
             <div className="rounded-3xl bg-brand-green px-8 py-8">
-              <div className="italia-stripe mb-6 h-1.5 w-16 rounded-sm" />
               <a
                 href={COMPANY.phoneHref}
                 className="flex items-center gap-3 text-[21px] font-bold text-white"
