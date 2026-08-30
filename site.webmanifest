@@ -1,0 +1,19 @@
+{
+  "name": "SA Consulting — краны и металлоизделия",
+  "short_name": "SA Consulting",
+  "description": "Продажа и аренда кранов, запчасти, техническое обследование и металлоизделия в Казахстане.",
+  "lang": "ru-KZ",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7f4ee",
+  "theme_color": "#123d32",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "202x211",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

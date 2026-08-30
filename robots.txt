@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Host: kranbk.kz
+Sitemap: https://kranbk.kz/sitemap.xml
