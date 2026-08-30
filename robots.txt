@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /api/
 
 Host: kranbk.kz
 Sitemap: https://kranbk.kz/sitemap.xml
